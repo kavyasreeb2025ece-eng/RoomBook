@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RoomBook - Login</title>
+
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <!-- Left side -->
+    <div class="login-info">
+
+        <div class="brand">
+            <div class="brand-logo">R</div>
+
+            <div>
+                <h1>RoomBook</h1>
+                <p>Workspace Scheduler</p>
+            </div>
+        </div>
+
+        <div class="info-content">
+
+            <h2>Book the right room<br>for your work.</h2>
+
+            <p>
+                Easily find available rooms, manage bookings
+                and keep your workspace organized.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Right side -->
+    <div class="login-form-container">
+
+        <div class="login-card">
+
+            <h2>Welcome back</h2>
+
+            <p class="subtitle">
+                Login to your RoomBook account
+            </p>
+
+
+            <form id="loginForm">
+
+                <!-- Username -->
+                <div class="form-group">
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder="Enter your username"
+                            required
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                    >
+
+                </div>
+
+
+                <!-- Role -->
+                <div class="form-group">
+
+                    <label for="role">
+                        Role
+                    </label>
+
+                    <select id="role" name="role" required>
+
+                        <option value="">
+                            Select your role
+                        </option>
+
+                        <option value="ADMIN">
+                            Admin
+                        </option>
+
+                        <option value="INVOICING_USER">
+                            Invoicing User
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                        type="submit"
+                        id="loginButton"
+                        class="login-button">
+
+                    Login
+
+                </button>
+
+
+                <p
+                        id="loginMessage"
+                        class="message">
+                </p>
+
+            </form>
+
+
+            <div class="register-link">
+
+                <span>Don't have an account?</span>
+
+                <a href="register.html">
+                    Register here
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
